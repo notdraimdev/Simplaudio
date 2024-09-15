@@ -36,7 +36,11 @@ func download(url: String, file_path: String) -> void:
 	
 	var http_client := HTTPClient.new()
 	http_client.connect_to_host(host, 80 if protocol == "http" else 443)
+<<<<<<< HEAD
 	print("host: " + str(host))
+=======
+	
+>>>>>>> 090e22605315971ec39a3998b4dec8cd4539e6d1
 	while http_client.get_status() in [HTTPClient.STATUS_CONNECTING, HTTPClient.STATUS_RESOLVING]:
 		http_client.poll()
 		await (Engine.get_main_loop() as SceneTree).process_frame
