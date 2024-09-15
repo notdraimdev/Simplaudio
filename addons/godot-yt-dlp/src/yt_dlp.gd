@@ -39,9 +39,11 @@ func FilesMissing() -> bool:
 	if not FileAccess.file_exists("user://%s" % executable_name):
 		return true
 	if not FileAccess.file_exists("user://ffmpeg.exe"):
-		return true
+		if not FileAccess.file_exists("user://ffmpeg"):
+			return true
 	if not FileAccess.file_exists("user://ffprobe.exe"):
-		return true
+		if not FileAccess.file_exists("user://ffmpeg"):
+			return true
 	
 	return false
 
