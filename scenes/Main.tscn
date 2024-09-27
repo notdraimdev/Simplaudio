@@ -825,9 +825,7 @@ horizontal_alignment = 2
 [node name="LinuxDisclaimer" parent="." instance=ExtResource("30_a5vi8")]
 visible = false
 layout_mode = 1
-offset_left = -187.883
 offset_top = -42.0
-offset_right = 187.883
 offset_bottom = 42.0
 
 [node name="WavDisclaimer" type="AcceptDialog" parent="."]
